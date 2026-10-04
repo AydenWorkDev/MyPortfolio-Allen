@@ -49,9 +49,8 @@ html{
 }
 
 
-/* ---##-- REUSABLE CSS --##--- */
 
-/* ----- GLOBAL BUTTON DESIGN ----- */
+/* ----- ALL BUTTON DESIGN ----- */
 .btn{
     font-weight: 500;
     padding: 12px 20px;
@@ -173,6 +172,7 @@ nav{
     position: relative;
     display: flex;
     justify-content: center;
+    text-align: justify;
     align-content: center;
     min-height: 80vh;
     flex-direction: column;
@@ -180,10 +180,10 @@ nav{
     padding-left: 20px;
 }
 .featured-text-card span{
-    background: var(--third-color);
+    background: var(--first-color);
     color: var(--color-white);
     padding: 3px 8px;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 5px;
 }
 .featured-name{
@@ -200,12 +200,14 @@ nav{
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color-second);
+    text-align: justify;
 }
 .featured-text-btn {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     text-align: left;
+    color: var(--text-color-third);
 }
 
 .featured-text-btn .btn {
@@ -264,26 +266,7 @@ nav{
         transform: translateY(10px);
     }
 }
-.scroll-btn{
-   position: absolute;
-   bottom: 0;
-   left: 50%;
-   translate: -50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 150px;
-   height: 50px;
-   gap: 5px;
-   text-decoration: none;
-   color: var(--text-color-second);
-   background: var(--color-white);
-   border-radius: 30px;
-   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-}
-.scroll-btn i{
-    font-size: 20px;
-}
+
 
 /* ----- MAIN BOX ----- */
 .section{
@@ -335,6 +318,7 @@ h3{
 }
 .about-info p{
     text-align: center;
+    text-align: justify;
     font-size: 15px;
     color: #777;
 }
@@ -355,18 +339,18 @@ h3{
     margin: 10px;
 }
 .skills-header{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .skills-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 7px;
 }
 .skills-list span{
     font-size: 14px;
     background: var(--first-color);
     color: var(--color-white);
-    padding: 2px 10px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 
@@ -607,8 +591,8 @@ footer{
         margin-top: 65px;
     }
     .image, .image img{
-        width: 150px;
-        height: 150px;
+        width: 290px;
+        height: 290px;
     }
     .row{
         display: flex;
@@ -634,7 +618,7 @@ footer{
 }
 
 /* ----- MOBILE PHONE RESPONSIVE ----- */
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 768px){
 
     /* Navigation */
     nav{
@@ -679,14 +663,14 @@ footer{
     }
 
     .image{
-        width: 140px;
-        height: 140px;
+        width: 250px;
+        height: 250px;
         margin: 0 auto;
     }
 
     .image img{
-        width: 140px;
-        height: 140px;
+        width: 250px;
+        height: 250px;
         object-fit: contain;
     }
 
@@ -759,30 +743,38 @@ footer{
 
 
     /* Skills */
-    .skills-box{
-        margin: 0;
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    .skills-list{
+    .skills-box {
+        width: 100%;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    .skills-header h3 {
+        font-size: 22px;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+
+    .skills-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 6px;
     }
 
-    .skills-list span{
-        font-size: 12px;
-        padding: 4px 8px;
+    .skills-list span {
+        font-size: 14px;
+        padding: 6px 10px;
     }
+}
 
-
-    /* Projects */
-    .project-container{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .project-box{
-        width: 100%;
-        height: 220px;
-    }
 
 
     /* Contact */
@@ -836,5 +828,5 @@ footer{
         font-size: 12px;
         padding-inline: 20px;
     }
-}
+
 
