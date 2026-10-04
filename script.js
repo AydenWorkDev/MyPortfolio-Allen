@@ -37,6 +37,17 @@ function downloadResume() {
     link.click();
 }
 
+/* ----- Every year change the year on Copyright----- */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+const sr = ScrollReveal({
+      origin: 'top',
+      distance: '80px',
+      duration: 2000,
+      reset: true     
+})
+
 /* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typedText",{
   strings : ["Student"],
@@ -46,13 +57,6 @@ let typingEffect = new Typed(".typedText",{
   backDelay : 2000
 })
 
-/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
-const sr = ScrollReveal({
-      origin: 'top',
-      distance: '80px',
-      duration: 2000,
-      reset: true     
-})
 
 /* -- HOME -- */
 sr.reveal('.featured-text-card',{})
