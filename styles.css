@@ -336,22 +336,28 @@ h3{
 
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
-    margin: 10px;
+    margin: 15px;
 }
 .skills-header{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.skills-list{
+.skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 15px;
+    align-items: center;
 }
-.skills-list span{
-    font-size: 14px;
-    background: var(--first-color);
-    color: var(--color-white);
-    padding: 5px 10px;
-    border-radius: 5px;
+
+.skills-list i {
+    font-size: 40px;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    transition: transform 0.3s ease;
+}
+
+.skills-list i:hover {
+    transform: scale(1.15);
 }
 
 /* ----- PROJECTS BOX ----- */
