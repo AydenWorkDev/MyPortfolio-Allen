@@ -50,7 +50,7 @@ const sr = ScrollReveal({
 
 /* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typedText",{
-  strings : ["Student"],
+  strings :["Student","Cris Allen"],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
